@@ -1,0 +1,34 @@
+
+- run the installer
+- follow on screen instructions
+- you are done
+
+There are 5 scripts in this installer. They can be run by pressing the power button of your drone.
+
+Press 5 times: COPY media files from internal memory to USB pendrive.
+Press 6 times: MOVE media files from internal memory to USB pendrive.
+Press 7 times: DELETE media files from internal memory.
+Press 8 times: Change recording location to USB pendrive.
+Press 9 times: Change recording location to internal memory.
+
+
+Scripts start with 4 quieter sounds. This indicates that the script has started.
+During the COPY and MOVE function you will also hear 4 sounds every 15 seconds until task is complete.
+
+You get some alarms (beeps and led lights) when task is complete.
+Alarm feedback as follows:
+
+- 1: There are no media files in internal memory so there is nothing to COPY/MOVE!
+- 2: All done without errors.
+- 5: Something went wrong. For troubleshoot see below: 
+In 3 press: Is pendrive mounted?, Is recording location set to internal memory? (9 press)
+In 5 press: Is pendrive mounted?, Is recording location set to internal memory? (9 press)
+In 6 press: You did NOT copy your files earlier using 3 press!
+In 8 press: Is pendrive mounted?, Is media folder in internal memory empty?
+In 9 press: You shouldn't get any error here.
+
+Other links:
+Parrot Forum: https://community.parrot.com/t5/Bebop-Drone/Copy-pics-vids-DIRECTLY-to-USB-Stick/td-p/113176
+PuTTY (Plink): http://www.chiark.greenend.org.uk/~sgtatham/putty/
+WinSCP: https://winscp.net/eng/index.php
+FAT 32 Formatter: http://www.ridgecrop.demon.co.uk/

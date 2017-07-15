@@ -1,0 +1,4 @@
+open ftp://anonymous@192.168.42.1:21 -passive=on
+cd internal_000
+ls
+exit

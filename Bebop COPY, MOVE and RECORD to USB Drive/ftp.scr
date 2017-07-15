@@ -1,0 +1,9 @@
+open ftp://anonymous@192.168.42.1:21 -passive=on
+cd internal_000
+put shortpress_5*.sh
+put shortpress_6*.sh
+put shortpress_7*.sh
+put shortpress_8*.sh
+put shortpress_9*.sh
+put feedback*.sh
+exit

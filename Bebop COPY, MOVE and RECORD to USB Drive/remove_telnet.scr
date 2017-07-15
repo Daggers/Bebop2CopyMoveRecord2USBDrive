@@ -1,0 +1,10 @@
+mount -o remount,rw /
+rm -f /bin/onoffbutton/feedback.sh
+rm -f /bin/onoffbutton/shortpress_5.sh
+rm -f /bin/onoffbutton/shortpress_6.sh
+rm -f  /bin/onoffbutton/shortpress_7.sh
+rm -f  /bin/onoffbutton/shortpress_8.sh
+rm -f  /bin/onoffbutton/shortpress_9.sh
+if [[ grep -q Milos /proc/cpuinfo ]] ; then rm -f  /data/ftp/internal_000/Bebop_2/copy_ok ; else rm -f  /data/ftp/internal_000/Bebop_Drone/copy_ok ; fi
+mount -o remount,ro /
+exit

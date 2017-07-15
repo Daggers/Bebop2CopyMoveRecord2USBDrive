@@ -1,0 +1,16 @@
+mount -o remount,rw /
+mv -f /data/ftp/internal_000/shortpress_5.sh /bin/onoffbutton/
+mv -f /data/ftp/internal_000/shortpress_6.sh /bin/onoffbutton/
+mv -f /data/ftp/internal_000/shortpress_7.sh /bin/onoffbutton/
+mv -f /data/ftp/internal_000/shortpress_8.sh /bin/onoffbutton/
+mv -f /data/ftp/internal_000/shortpress_9.sh /bin/onoffbutton/
+mv -f /data/ftp/internal_000/feedback.sh /bin/onoffbutton/
+chmod 755 /bin/onoffbutton/shortpress_5.sh
+chmod 755 /bin/onoffbutton/shortpress_6.sh
+chmod 755 /bin/onoffbutton/shortpress_7.sh
+chmod 755 /bin/onoffbutton/shortpress_8.sh
+chmod 755 /bin/onoffbutton/shortpress_9.sh
+chmod 755 /bin/onoffbutton/feedback.sh
+mount -o remount,ro /
+sh -c '/bin/reboot.sh > /dev/null 2>&1 &' &
+exit

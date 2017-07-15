@@ -1,0 +1,3 @@
+ls /bin/onoffbutton/
+sh -c '/bin/reboot.sh > /dev/null 2>&1 &' &
+exit
