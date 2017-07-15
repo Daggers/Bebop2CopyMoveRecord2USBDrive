@@ -89,14 +89,14 @@ else
 	if [ -d $USBDST ]; then
 		mount -o remount,rw $USBDST
 		if [ "$(ls -A $INTMEM$BBDIR/media/)" ]; then
-			echo "Copying media to USB OTG drive"
+			echo "moving media to USB OTG drive"
 			# Feedback during copying
 			if [ $BBDIR == "/Bebop_2" ]; then
 				exec /bin/onoffbutton/feedback.sh &
 			else
 				(BLDC_Test_Bench -G 1 1 0 >/dev/null 2>&1)
 			fi
-			# copying media files
+			# moving media files
 			mv -f $INTMEM$BBDIR/media/* $USBDST
 			# DONE
 			if [ $BBDIR == "/Bebop_2" ]; then
@@ -108,7 +108,7 @@ else
 			fi
 		else
 			# NOTHING TO MOVE. DONE 
-			echo "No files to copy! $INTMEM$BBDIR/media/ is empty"
+			echo "No files to move! $INTMEM$BBDIR/media/ is empty"
 			if [ $BBDIR == "/Bebop_2" ]; then
 				f=/sys/devices/platform/leds_pwm/leds/milos:super_led/brightness
 				brightness=150
