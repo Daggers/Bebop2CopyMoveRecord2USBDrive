@@ -1,0 +1,72 @@
+####### ENGLISH #######
+There are 5 scripts in this installer. They can be run by pressing the power button of your drone.
+
+Press 5 times: COPY media files from internal memory to USB pendrive.
+Press 6 times: MOVE media files from internal memory to USB pendrive.
+Press 7 times: DELETE previously copied media files from internal memory. If you didn`t copy files pressing 5 times then this script won`t work.
+Press 8 times: Change recording location to USB pendrive.
+Press 9 times: Change recording location to internal memory.
+
+Scripts start with 4 quieter motor sounds. This indicates that the script has started.
+
+You get some alarms (sounds and led flashes) when task is complete.
+Bebop doesn`t want to make sound sometimes, so better watch LED flashes.
+Alarm feedback as follows:
+- 1 alarm: Nothing to copy or move
+- 2 alarms: All done without errors.
+- 5 alarms: Something went wrong. For troubleshoot and solve see below: 
+
+If pressed 5 or 6 times:
+- Direct record to USB flash drive activated (press 9 times to deactivate)
+- USB pen-Drive doesn`t connected (connect pen-drive)
+- USB pen-drive doesn`t formatted FAT32 (format pen-drive FAT32)
+- You have disconnected and connected back pen-drive (or connected other pen drive) without rebooting drone (reboot drone)
+
+If pressed 7 times:
+- You didn`t copy files to USB flash drive.
+
+If pressed 8 or 9 times:
+- USB pen-Drive doesn`t connected (connect pen-drive)
+- You have disconnected and connected back pen-drive (or connected other pen drive) without rebooting drone (reboot drone)
+
+
+####### RUSSIAN #######
+В этом инсталляторе 5 скриптов. Каждый из них может быть запущен нажатием кнопки питания дрона.
+
+Нажать 5 раз: Скопировать файлы с внутренней памяти на USB флешку
+Нажать 6 раз: Переместить файлы с внутренней памяти на USB флешку
+Нажать 7 раз: Удалить ранее скоприванные файлы с внутренеей памяти. Если Вы не скопировали файлы 5-ти кратным нажатием, то этаот скрипт не сработает
+Нажать 8 раз: Включить запись на USB флешку
+Нажать 9 раз: Выключить запись на USB флешку
+
+При запуске скрипта дрон реагирует поочередным включением (тестом) всех моторов.
+По окончании выполнения скрипта дрон реагирует световым и звуковым сигналами. 
+Иногда дрон может не выдать один из звковых сигналов, поэтому лучше следите за световыми сигналами.
+Сигналы могут быть следующими:
+- 1 сигнал: Нечего копировать или перемещать
+- 2 сигнала: скрипт выполнен успешно.
+- 5 сигналов: Произошла какая-то ошибка. Возможные причины возникновения ошибки и их решение:
+
+
+Если нажимали 5 или 6 раз:
+- Direct record to USB flash drive activated (press 9 times to deactivate)
+- Активирована прямая запись на USB флешку (нажмите 9 раз для деактивации)
+- Не подключена флешка (подключите флешку)
+- Флешка отформатирована не в FAT32 (отформатируйте флешку в FAT32)
+- Вы отключили и подключили флешку (или подключили другую флешку) не перезагрузив дрона (перезагрузите дрона)
+
+Если нажимали 7 раз:
+- Вы не скопировали файлы на USB флешку
+
+Если нажимали 8 или 9 раз:
+- Не подключена флешка (подключите флешку)
+- Вы отключили и подключили флешку (или подключили другую флешку) не перезагрузив дрона (перезагрузите дрона)
+
+
+#####################
+Other links:
+Parrot Forum: https://community.parrot.com/t5/Bebop-Drone/Copy-pics-vids-DIRECTLY-to-USB-Stick/td-p/113176
+PuTTY (Plink): http://www.chiark.greenend.org.uk/~sgtatham/putty/
+WinSCP: https://winscp.net/eng/index.php
+FAT 32 Formatter: http://www.ridgecrop.demon.co.uk/
+#####################
