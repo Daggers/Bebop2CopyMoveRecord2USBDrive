@@ -47,7 +47,6 @@ If pressed 8 or 9 times:
 - 2 сигнала: скрипт выполнен успешно.
 - 5 сигналов: Произошла какая-то ошибка. Возможные причины возникновения ошибки и их решение:
 
-
 Если нажимали 5 или 6 раз:
 - Direct record to USB flash drive activated (press 9 times to deactivate)
 - Активирована прямая запись на USB флешку (нажмите 9 раз для деактивации)
@@ -61,6 +60,38 @@ If pressed 8 or 9 times:
 Если нажимали 8 или 9 раз:
 - Не подключена флешка (подключите флешку)
 - Вы отключили и подключили флешку (или подключили другую флешку) не перезагрузив дрона (перезагрузите дрона)
+
+
+####### FRANÇAIS #######
+Il y a 5 scripts dans ce programme d'installation.
+
+Pressez 5 fois : COPIE les fichiers médias de la mémoire interne vers le lecteur USB
+Pressez 6 fois : DEPLACE les fichiers médias de la mémoire interne vers le lecteur USB
+Pressez 7 fois : SUPPRIME les fichiers médias précédemment copiés à partir de la mémoire interne.
+Si vous n'avez pas copié les fichiers médias en pressant 5 fois, ce script ne fonctionnera pas.
+Pressez 8 fois : change l'emplacement de l'enregistrement vers le lecteur USB
+Pressez 9 fois : change l'emplacement de l'enregistrement vers la mémoire interne.
+
+Les scripts commencent avec 4 bruits discrets de moteurs. Cela indique que le script a commencé.
+Une alarme (sons et led rouge clignotante) se fait entendre lorsque la tâche est terminée.
+Parfois le Bebop n'émet pas de son, il est alors préférable de surveiller les LED clignotantes.
+Réaction de l'alarme :
+– 1 alarme : rien à copier ou déplacer
+– 2 alarmes : tout a été effectué sans problème
+– 5 alarmes : quelque chose cloche. Pour résoudre les problèmes:
+
+Si vous avez pressé 5 ou 6 fois :
+– l'enregistrement directement vers le lecteur USB est activé (pressez 9 fois pour désactiver)
+– lecteur USB non connecté (connecter un support USB)
+– le lecteur USB n'est pas formaté en FAT32 (formater votre support en FAT32)
+– si vous avez déconnecté et reconnecté votre support USB (ou bien connecté un autre supportUSB) sans avoir rebooté le drone), rebooter le drone.
+
+Si vous avez pressé 7 fois :
+– vous n'avez pas copié les fichiers vers le lecteur USB.
+
+Si vous avez pressé 8 ou 9 fois :
+– lecteur USB non connecté (connecter un support USB)
+– si vous avez déconnecté et reconnecté votre support USB (ou bien connecté un autre support USB) sans avoir rebooté le drone), rebooter le drone.
 
 
 #####################
