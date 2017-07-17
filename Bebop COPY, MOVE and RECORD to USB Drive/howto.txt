@@ -1,34 +1,102 @@
-
-- run the installer
-- follow on screen instructions
-- you are done
-
+####### ENGLISH #######
 There are 5 scripts in this installer. They can be run by pressing the power button of your drone.
 
 Press 5 times: COPY media files from internal memory to USB pendrive.
 Press 6 times: MOVE media files from internal memory to USB pendrive.
-Press 7 times: DELETE media files from internal memory.
+Press 7 times: DELETE previously copied media files from internal memory. If you didn`t copy files pressing 5 times then this script won`t work.
 Press 8 times: Change recording location to USB pendrive.
 Press 9 times: Change recording location to internal memory.
 
+Scripts start with 4 quieter motor sounds. This indicates that the script has started.
 
-Scripts start with 4 quieter sounds. This indicates that the script has started.
-During the COPY and MOVE function you will also hear 4 sounds every 15 seconds until task is complete.
-
-You get some alarms (beeps and led lights) when task is complete.
+You get some alarms (sounds and led flashes) when task is complete.
+Bebop doesn`t want to make sound sometimes, so better watch LED flashes.
 Alarm feedback as follows:
+- 1 alarm: Nothing to copy or move
+- 2 alarms: All done without errors.
+- 5 alarms: Something went wrong. For troubleshoot and solve see below: 
 
-- 1: There are no media files in internal memory so there is nothing to COPY/MOVE!
-- 2: All done without errors.
-- 5: Something went wrong. For troubleshoot see below: 
-In 3 press: Is pendrive mounted?, Is recording location set to internal memory? (9 press)
-In 5 press: Is pendrive mounted?, Is recording location set to internal memory? (9 press)
-In 6 press: You did NOT copy your files earlier using 3 press!
-In 8 press: Is pendrive mounted?, Is media folder in internal memory empty?
-In 9 press: You shouldn't get any error here.
+If pressed 5 or 6 times:
+- Direct record to USB flash drive activated (press 9 times to deactivate)
+- USB pen-Drive doesn`t connected (connect pen-drive)
+- USB pen-drive doesn`t formatted FAT32 (format pen-drive FAT32)
+- You have disconnected and connected back pen-drive (or connected other pen drive) without rebooting drone (reboot drone)
 
+If pressed 7 times:
+- You didn`t copy files to USB flash drive.
+
+If pressed 8 or 9 times:
+- USB pen-Drive doesn`t connected (connect pen-drive)
+- You have disconnected and connected back pen-drive (or connected other pen drive) without rebooting drone (reboot drone)
+
+
+####### RUSSIAN #######
+В этом инсталляторе 5 скриптов. Каждый из них может быть запущен нажатием кнопки питания дрона.
+
+Нажать 5 раз: Скопировать файлы с внутренней памяти на USB флешку
+Нажать 6 раз: Переместить файлы с внутренней памяти на USB флешку
+Нажать 7 раз: Удалить ранее скоприванные файлы с внутренеей памяти. Если Вы не скопировали файлы 5-ти кратным нажатием, то этаот скрипт не сработает
+Нажать 8 раз: Включить запись на USB флешку
+Нажать 9 раз: Выключить запись на USB флешку
+
+При запуске скрипта дрон реагирует поочередным включением (тестом) всех моторов.
+По окончании выполнения скрипта дрон реагирует световым и звуковым сигналами. 
+Иногда дрон может не выдать один из звковых сигналов, поэтому лучше следите за световыми сигналами.
+Сигналы могут быть следующими:
+- 1 сигнал: Нечего копировать или перемещать
+- 2 сигнала: скрипт выполнен успешно.
+- 5 сигналов: Произошла какая-то ошибка. Возможные причины возникновения ошибки и их решение:
+
+Если нажимали 5 или 6 раз:
+- Direct record to USB flash drive activated (press 9 times to deactivate)
+- Активирована прямая запись на USB флешку (нажмите 9 раз для деактивации)
+- Не подключена флешка (подключите флешку)
+- Флешка отформатирована не в FAT32 (отформатируйте флешку в FAT32)
+- Вы отключили и подключили флешку (или подключили другую флешку) не перезагрузив дрона (перезагрузите дрона)
+
+Если нажимали 7 раз:
+- Вы не скопировали файлы на USB флешку
+
+Если нажимали 8 или 9 раз:
+- Не подключена флешка (подключите флешку)
+- Вы отключили и подключили флешку (или подключили другую флешку) не перезагрузив дрона (перезагрузите дрона)
+
+
+####### FRANÇAIS #######
+Il y a 5 scripts dans ce programme d'installation.
+
+Pressez 5 fois : COPIE les fichiers médias de la mémoire interne vers le lecteur USB
+Pressez 6 fois : DEPLACE les fichiers médias de la mémoire interne vers le lecteur USB
+Pressez 7 fois : SUPPRIME les fichiers médias précédemment copiés à partir de la mémoire interne.
+Si vous n'avez pas copié les fichiers médias en pressant 5 fois, ce script ne fonctionnera pas.
+Pressez 8 fois : change l'emplacement de l'enregistrement vers le lecteur USB
+Pressez 9 fois : change l'emplacement de l'enregistrement vers la mémoire interne.
+
+Les scripts commencent avec 4 bruits discrets de moteurs. Cela indique que le script a commencé.
+Une alarme (sons et led rouge clignotante) se fait entendre lorsque la tâche est terminée.
+Parfois le Bebop n'émet pas de son, il est alors préférable de surveiller les LED clignotantes.
+Réaction de l'alarme :
+– 1 alarme : rien à copier ou déplacer
+– 2 alarmes : tout a été effectué sans problème
+– 5 alarmes : quelque chose cloche. Pour résoudre les problèmes:
+
+Si vous avez pressé 5 ou 6 fois :
+– l'enregistrement directement vers le lecteur USB est activé (pressez 9 fois pour désactiver)
+– lecteur USB non connecté (connecter un support USB)
+– le lecteur USB n'est pas formaté en FAT32 (formater votre support en FAT32)
+– si vous avez déconnecté et reconnecté votre support USB (ou bien connecté un autre supportUSB) sans avoir rebooté le drone), rebooter le drone.
+
+Si vous avez pressé 7 fois :
+– vous n'avez pas copié les fichiers vers le lecteur USB.
+
+Si vous avez pressé 8 ou 9 fois :
+– lecteur USB non connecté (connecter un support USB)
+– si vous avez déconnecté et reconnecté votre support USB (ou bien connecté un autre support USB) sans avoir rebooté le drone), rebooter le drone.
+
+
+#####################
 Other links:
-Parrot Forum: https://community.parrot.com/t5/Bebop-Drone/Copy-pics-vids-DIRECTLY-to-USB-Stick/td-p/113176
+Youtube: https://www.youtube.com/watch?v=wA0ieB8imYA
 PuTTY (Plink): http://www.chiark.greenend.org.uk/~sgtatham/putty/
 WinSCP: https://winscp.net/eng/index.php
 FAT 32 Formatter: http://www.ridgecrop.demon.co.uk/
