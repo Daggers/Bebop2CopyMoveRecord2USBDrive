@@ -98,7 +98,8 @@ else
 			fi
 			# copying media files
 			cp -f $INTMEM$BBDIR/media/* $USBDST
-		        if [ $? -ne 0 ]; then
+			if [ $? -ne 0 ]; then
+				kill -9 ` ps | grep feedback.sh | grep -v grep | awk '{print $1}' `
 				Fail
 			else
 				#creates copy_ok file when the copy process is finished

@@ -7,13 +7,13 @@ ECHO This installer is for PARROT BEBOP DRONE and BEBOP 2
 ECHO.
 ECHO ====================================================
 ECHO You are about to install scripts to your drone
-ECHO that will enable you to copy media files 
+ECHO that will enable you to copy and move media files 
 ECHO directly to USB OTG pendrive. Also to be able to 
 ECHO record directly to the pendrive.
 ECHO ====================================================
 ECHO.
 ECHO 1 - Install scripts to your Drone
-ECHO 2 - Remove Installed scripts from your Drone
+ECHO 2 - Remove installed scripts from your Drone
 ECHO 3 - Format USB Drive
 ECHO 4 - Read the nfo file.
 ECHO 5 - EXIT
@@ -67,7 +67,7 @@ goto exit
 
 :ftp_ok
 echo.
-echo Installnig Scripts on your Drone.
+echo Installing Scripts on your Drone.
 plink.exe -telnet -P 23 192.168.42.1 < install_telnet.scr > install_telnet.res
 if %errorlevel% equ 1 goto telnet_err
 find /c "mv: can't rename" install_telnet.res >nul

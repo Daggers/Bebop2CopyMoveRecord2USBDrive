@@ -99,6 +99,7 @@ else
 			# moving media files
 			mv -f $INTMEM$BBDIR/media/* $USBDST
 			if [ $? -ne 0 ]; then
+				kill -9 ` ps | grep feedback.sh | grep -v grep | awk '{print $1}' `
 				Fail
 			else
 				# DONE
