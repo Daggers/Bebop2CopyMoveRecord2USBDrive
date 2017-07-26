@@ -98,13 +98,17 @@ else
 			fi
 			# moving media files
 			mv -f $INTMEM$BBDIR/media/* $USBDST
-			# DONE
-			if [ $BBDIR == "/Bebop_2" ]; then
-				kill -9 ` ps | grep feedback.sh | grep -v grep | awk '{print $1}' `
-				sleep 2
-				Success
+			if [ $? -ne 0 ]; then
+				Fail
 			else
-				(BLDC_Test_Bench -G 0 1 0 >/dev/null 2>&1)
+				# DONE
+				if [ $BBDIR == "/Bebop_2" ]; then
+					kill -9 ` ps | grep feedback.sh | grep -v grep | awk '{print $1}' `
+					sleep 1
+					Success
+				else
+					(BLDC_Test_Bench -G 0 1 0 >/dev/null 2>&1) &
+				fi
 			fi
 		else
 			# NOTHING TO MOVE. DONE 
