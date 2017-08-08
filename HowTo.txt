@@ -67,7 +67,7 @@ If pressed 8 or 9 times:
 
 
 ####### FRANÇAIS ######
-Ces scripts sont basées sur des scripts de Pete Tum et ont été modifiés pour une meilleure compatibilité dans les différentes versions de firmware sur le Bebop 1 et Bebop 2
+Ces scripts sont basées sur des scripts de Pete Tum et ont été modifiés pour une meilleure compatibilité c les différentes versions de firmware sur Bebop1 et Bebop 2
 #######################
 
 Il y a 5 scripts dans ce programme d'installation.
