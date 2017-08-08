@@ -1,4 +1,6 @@
 ####### ENGLISH #######
+This scripts is based on Pete`s Tum scripts and was modified for better compatibility with different firmware versions for Bebop 1 and Bebop 2
+#######################
 There are 5 scripts in this installer. They can be run by pressing the power button of your drone.
 
 Press 5 times: COPY media files from internal memory to USB pendrive.
@@ -31,6 +33,8 @@ If pressed 8 or 9 times:
 
 
 ####### RUSSIAN #######
+Эти скрипты основаны на скриптах Pete Tum и были модифицированы для лучшей совместимости в разными версиями прошивок на Bebop 1 и Bebop 2
+#######################
 В этом инсталляторе 5 скриптов. Каждый из них может быть запущен нажатием кнопки питания дрона.
 
 Нажать 5 раз: Скопировать файлы с внутренней памяти на USB флешку
@@ -62,7 +66,10 @@ If pressed 8 or 9 times:
 - Вы отключили и подключили флешку (или подключили другую флешку) не перезагрузив дрона (перезагрузите дрона)
 
 
-####### FRANÇAIS #######
+####### FRANÇAIS ######
+Ces scripts sont basées sur des scripts de Pete Tum et ont été modifiés pour une meilleure compatibilité dans les différentes versions de firmware sur le Bebop 1 et Bebop 2
+#######################
+
 Il y a 5 scripts dans ce programme d'installation.
 
 Pressez 5 fois : COPIE les fichiers médias de la mémoire interne vers le lecteur USB
