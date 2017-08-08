@@ -9,7 +9,7 @@ To install scripts to your Bebop2 drone you have to connect to drone`s WiFi netw
 and start self-extracting RAR archive. Next you just have to follow instructions from the command prompt window.
 
 Набор скриптов для копирования, перемещения и активации прямой записи видео и фото на USB флешку. 
-Эти скрипты основаны на скриптах Pete Tum и были модифицированы для лучшей совместимости в разными версиями прошивок на Bebop 1 и Bebop 2.
+Эти скрипты основаны на скриптах Pete Tum и были модифицированы для лучшей совместимости c разными версиями прошивок на Bebop 1 и Bebop 2.
 Протестированы на Bebop 2 с прошивками 4.0.4, 4.0.5, 4.0.6, 4.2.0 и 4.2.1 и на Bebop 1 с прошивкой 4.0.6.
 
 Для установки скриптов в Ваш дрон Вам необходимо подключиться к WiFi сети дрона с Вашего компьютера или ноутбука с Windows 
