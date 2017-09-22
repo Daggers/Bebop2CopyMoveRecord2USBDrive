@@ -10,7 +10,7 @@ if [ "$(gprop ro.hardware)" = "milosboard" ]; then
         usleep 500000
         for i in 0 1; do
                 echo ${brightness} > $f
-				BLDC_Test_Bench -M 2 >/dev/null 2>&1
+				i2ctool -d /dev/i2c-cypress 0x8 0x82 0x2 >/dev/null 2>&1
                 usleep 500000
                 echo 0 > $f
                 usleep 500000
@@ -42,7 +42,7 @@ if [ "$(gprop ro.hardware)" = "milosboard" ]; then
         usleep 500000
         for i in 0 1 2 3 4; do
                 echo ${brightness} > $f
-				BLDC_Test_Bench -M 2 >/dev/null 2>&1
+				i2ctool -d /dev/i2c-cypress 0x8 0x82 0x2 >/dev/null 2>&1
                 usleep 500000
                 echo 0 > $f
                 usleep 500000
@@ -68,7 +68,7 @@ fi
 if grep -q Milos /proc/cpuinfo; then
 	BBDIR=/Bebop_2
 	# Script starts - 4 rotor sounds
-	BLDC_Test_Bench -M 1 >/dev/null 2>&1;
+	i2ctool -d /dev/i2c-cypress 0x8 0x82 0x1 >/dev/null 2>&1;
 	sleep 2
 else
 	BBDIR=/Bebop_Drone
