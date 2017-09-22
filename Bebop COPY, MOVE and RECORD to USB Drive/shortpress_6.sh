@@ -121,7 +121,7 @@ else
 				echo 0 > $f
 				usleep 500000
 				echo ${brightness} > $f
-				BLDC_Test_Bench -M 2 >/dev/null 2>&1
+				i2ctool -d /dev/i2c-cypress 0x8 0x82 0x2 >/dev/null 2>&1
                 usleep 500000
                 echo 0 > $f
 				usleep 500000
