@@ -12,7 +12,6 @@ Press 9 times: Change recording location to internal memory.
 Scripts start with 4 quieter motor sounds. This indicates that the script has started.
 
 You get some alarms (sounds and led flashes) when task is complete.
-Bebop doesn`t want to make sound sometimes, so better watch LED flashes.
 Alarm feedback as follows:
 - 1 alarm: Nothing to copy or move
 - 2 alarms: All done without errors.
@@ -45,7 +44,6 @@ If pressed 8 or 9 times:
 
 При запуске скрипта дрон реагирует поочередным включением (тестом) всех моторов.
 По окончании выполнения скрипта дрон реагирует световым и звуковым сигналами. 
-Иногда дрон может не выдать один из звковых сигналов, поэтому лучше следите за световыми сигналами.
 Сигналы могут быть следующими:
 - 1 сигнал: Нечего копировать или перемещать
 - 2 сигнала: скрипт выполнен успешно.
@@ -81,7 +79,6 @@ Pressez 9 fois : change l'emplacement de l'enregistrement vers la mémoire inter
 
 Les scripts commencent avec 4 bruits discrets de moteurs. Cela indique que le script a commencé.
 Une alarme (sons et led rouge clignotante) se fait entendre lorsque la tâche est terminée.
-Parfois le Bebop n'émet pas de son, il est alors préférable de surveiller les LED clignotantes.
 Réaction de l'alarme :
 – 1 alarme : rien à copier ou déplacer
 – 2 alarmes : tout a été effectué sans problème
