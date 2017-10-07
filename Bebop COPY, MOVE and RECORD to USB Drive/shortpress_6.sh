@@ -72,7 +72,7 @@ INTMEM=/data/ftp/internal_000
 if grep -q Milos /proc/cpuinfo; then
 	BBDIR=/Bebop_2
 	# Script starts - 4 rotor sounds
-	i2ctool -d /dev/i2c-cypress 0x8 0x82 0x1 >/dev/null 2>&1
+	BLDC_Test_Bench -M 1 >/dev/null 2>&1
 	sleep 2
 else
 	BBDIR=/Bebop_Drone
@@ -89,7 +89,7 @@ else
 	if [ -d $USBDST ]; then
 		mount -o remount,rw $USBDST
 		if [ "$(ls -A $INTMEM$BBDIR/media/)" ]; then
-			echo "moving media to USB OTG drive"
+			echo "Moving media to USB OTG drive"
 			# Feedback during copying
 			if [ $BBDIR == "/Bebop_2" ]; then
 				exec /bin/onoffbutton/feedback.sh &
@@ -98,18 +98,13 @@ else
 			fi
 			# moving media files
 			mv -f $INTMEM$BBDIR/media/* $USBDST
-			if [ $? -ne 0 ]; then
+			# DONE
+			if [ $BBDIR == "/Bebop_2" ]; then
 				kill -9 ` ps | grep feedback.sh | grep -v grep | awk '{print $1}' `
-				Fail
+				sleep 2
+				Success
 			else
-				# DONE
-				if [ $BBDIR == "/Bebop_2" ]; then
-					kill -9 ` ps | grep feedback.sh | grep -v grep | awk '{print $1}' `
-					sleep 1
-					Success
-				else
-					(BLDC_Test_Bench -G 0 1 0 >/dev/null 2>&1) &
-				fi
+				(BLDC_Test_Bench -G 0 1 0 >/dev/null 2>&1)
 			fi
 		else
 			# NOTHING TO MOVE. DONE 

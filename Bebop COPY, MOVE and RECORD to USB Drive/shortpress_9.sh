@@ -68,7 +68,7 @@ fi
 if grep -q Milos /proc/cpuinfo; then
 	BBDIR=/Bebop_2
 	# Script starts - 4 rotor sounds
-	i2ctool -d /dev/i2c-cypress 0x8 0x82 0x1 >/dev/null 2>&1;
+	i2ctool -d /dev/i2c-cypress 0x8 0x82 0x1 >/dev/null 2>&1
 	sleep 2
 else
 	BBDIR=/Bebop_Drone
