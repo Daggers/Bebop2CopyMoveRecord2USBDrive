@@ -130,7 +130,6 @@ Si vous avez pressé 8 ou 9 fois :
 
 #####################
 Other links:
-Youtube: https://www.youtube.com/watch?v=wA0ieB8imYA
 PuTTY (Plink): http://www.chiark.greenend.org.uk/~sgtatham/putty/
 WinSCP: https://winscp.net/eng/index.php
 FAT 32 Formatter: http://www.ridgecrop.demon.co.uk/
